@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fazlul Aman - Electrical Engineer & Researcher</title>
+<title>Fazlul Aman — Electrical Engineer & Researcher</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -500,6 +500,15 @@
   .tag-journal { background: #7c6cf822; color: #a89cf8; border: 1px solid #7c6cf844; }
   .tag-conf { background: #ff660022; color: #ff9944; border: 1px solid #ff660044; }
 
+  .pub-abstract {
+    font-size: 12px;
+    color: var(--white-dim);
+    line-height: 1.65;
+    margin: 6px 0 8px;
+    border-left: 2px solid var(--border2);
+    padding-left: 10px;
+  }
+
   .pub-arrow {
     color: var(--border);
     transition: color 0.2s;
@@ -889,18 +898,18 @@
   <div class="about-grid">
     <div class="about-card wide">
       <h3>⚡ Research Focus</h3>
-      <p>My Masters-by-Research centers on evaluating commercial grounding enhancement materials - GEM, MEG, and SanEarth - under both low-voltage AC and high-voltage impulse conditions (100–300 kV). I've tested 13+ configurations controlling water content (0–10%), analyzed E₅₀, Z<sub>imp</sub>, and ionization thresholds, and modeled performance in SES-CDEGS. My work bridges lab characterization with real-world soil resistivity surveys and field grounding installations.</p>
+      <p>My Masters-by-Research centers on evaluating commercial grounding enhancement materials — GEM, MEG, and SanEarth — under both low-voltage AC and high-voltage impulse conditions (100–300 kV). I've tested 13+ configurations controlling water content (0–10%), analyzed E₅₀, Z<sub>imp</sub>, and ionization thresholds, and modeled performance in SES-CDEGS. My work bridges lab characterization with real-world soil resistivity surveys and field grounding installations.</p>
     </div>
     <div class="about-card">
       <h3>🎯 Target Roles</h3>
       <div class="target-role">
         <h4>// open to opportunities in</h4>
         <ul>
-          <li>R&D Engineer - Power / HV Systems</li>
+          <li>R&D Engineer — Power / HV Systems</li>
           <li>Grounding & Lightning Protection</li>
           <li>Electrical Design Engineer</li>
           <li>Power Systems Researcher</li>
-          <li>University Lecturer / PhD</li>
+          <li>University Lecturer / Postdoc</li>
         </ul>
       </div>
     </div>
@@ -947,6 +956,7 @@
       <div class="pub-num">01</div>
       <div class="pub-body">
         <div class="pub-title">Performance of Grounding Enhancement Materials in Sandy Loam Soil Under Various Water Content Conditions for Lightning Protection</div>
+        <div class="pub-abstract">Investigates how three commercial grounding enhancement materials — GEM, MEG, and SanEarth — perform in sandy loam soil across varying water content levels (0–10%). The study evaluates DC resistance and impulse impedance to determine which material offers the most consistent protection under tropical soil conditions relevant to lightning protection design.</div>
         <div class="pub-meta">
           <span class="pub-venue">IEEE Access</span>
           <span class="pub-year">2025</span>
@@ -960,6 +970,7 @@
       <div class="pub-num">02</div>
       <div class="pub-body">
         <div class="pub-title">Impulse Characteristics of Grounding Systems with Enhancement Materials Under High Voltage</div>
+        <div class="pub-abstract">Examines the high-voltage impulse behavior of grounding systems backfilled with enhancement materials, testing up to 300 kV. The paper analyzes impulse impedance (Z&#8342;&#8346;&#8346;), critical electric field (E&#8085;&#8320;), and breakdown characteristics, revealing how EM-treated electrodes respond differently from untreated soil under fast-front lightning surges.</div>
         <div class="pub-meta">
           <span class="pub-venue">IEEE Xplore</span>
           <span class="pub-year">2025</span>
@@ -973,6 +984,7 @@
       <div class="pub-num">03</div>
       <div class="pub-body">
         <div class="pub-title">AC and Impulse Characterization of Grounding Enhancement Materials with Controlled Water Content</div>
+        <div class="pub-abstract">Presents a dual-mode characterization of grounding enhancement materials using both low-voltage AC and high-voltage impulse testing across 13+ configurations with controlled water content from 0% to 10%. A calibrated DSO setup was used to capture precise impedance and ionization data, showing that AC and impulse performance trends do not always align.</div>
         <div class="pub-meta">
           <span class="pub-venue">Applied Sciences (MDPI)</span>
           <span class="pub-year">2025</span>
@@ -986,6 +998,7 @@
       <div class="pub-num">04</div>
       <div class="pub-body">
         <div class="pub-title">Impulse Performance of Grounding Rods with Enhancement Materials in Sandy Loam Soil</div>
+        <div class="pub-abstract">Conference paper presenting field and lab results of vertical grounding rods installed in sandy loam soil treated with commercial enhancement materials. Tests were performed under both positive and negative impulse polarities, revealing polarity-dependent behavior and highlighting the inductive effect that becomes significant at low DC resistance values.</div>
         <div class="pub-meta">
           <span class="pub-venue">CPEEE 2025</span>
           <span class="pub-year">2025</span>
@@ -999,6 +1012,7 @@
       <div class="pub-num">05</div>
       <div class="pub-body">
         <div class="pub-title">Comparison of Grounding Enhancement Materials for Low Resistivity Applications in Power Systems</div>
+        <div class="pub-abstract">A comparative study of GEM, MEG, and SanEarth in low-resistivity soil environments typical of tropical power system installations. The paper benchmarks DC resistance reduction, cost-effectiveness, and long-term stability of each material, providing practical guidance for engineers selecting backfill compounds for substation grounding.</div>
         <div class="pub-meta">
           <span class="pub-venue">CPEEE 2025</span>
           <span class="pub-year">2025</span>
@@ -1008,10 +1022,21 @@
       <div class="pub-arrow">→</div>
     </a>
 
+    <!-- READ MORE BUTTON (shown after pub 5) -->
+    <div id="readMoreWrapper" style="text-align:center; padding: 1rem 0;">
+      <button id="readMoreBtn" onclick="showMorePubs()" style="display:inline-flex;align-items:center;gap:8px;padding:0.85rem 2rem;border-radius:8px;border:1px solid var(--cyan);background:var(--cyan-glow);color:var(--cyan);font-family:var(--font-mono);font-size:13px;cursor:pointer;transition:all 0.2s;">
+        Show 13 more publications ↓
+      </button>
+    </div>
+
+    <!-- HIDDEN PUBLICATIONS 6–18 -->
+    <div id="morePubs" style="display:none; flex-direction:column; gap:1rem;">
+
     <a class="pub-item" href="https://doi.org/10.32604/ee.2025.058916" target="_blank" data-type="journal">
       <div class="pub-num">06</div>
       <div class="pub-body">
         <div class="pub-title">Evaluation of Grounding Enhancement Material Performance Under AC Conditions in Tropical Soils</div>
+        <div class="pub-abstract">Evaluates the AC impedance characteristics of three enhancement materials mixed at different concentrations (5% WC, 5% WC + 10% EM, 10% WC + 10% EM) in tropical sandy loam soil. Using a calibrated parallel plate lab cell with a CT-based current measurement, the study maps impedance behavior across frequency and moisture variations relevant to Malaysia's climate.</div>
         <div class="pub-meta">
           <span class="pub-venue">Energy Engineering</span>
           <span class="pub-year">2025</span>
@@ -1025,6 +1050,7 @@
       <div class="pub-num">07</div>
       <div class="pub-body">
         <div class="pub-title">Low-Voltage AC Characterization of Grounding Enhancement Materials in Laboratory Soil Configurations</div>
+        <div class="pub-abstract">Reports LV-AC dry and wet testing of gravel and soil specimens mixed with GEM, MEG, and SanEarth under controlled water content from 0% to 10%. The paper introduces an air-gap AC test method to isolate material conductivity and establishes baseline impedance profiles for each EM type, offering a foundation for comparison with impulse results.</div>
         <div class="pub-meta">
           <span class="pub-venue">Applied Sciences (MDPI)</span>
           <span class="pub-year">2025</span>
@@ -1038,6 +1064,7 @@
       <div class="pub-num">08</div>
       <div class="pub-body">
         <div class="pub-title">Influence of Water Content on the Grounding Resistance of Rods Backfilled with Enhancement Materials</div>
+        <div class="pub-abstract">Focuses on how varying water content levels from 0% to 10% affect the DC grounding resistance of vertical rod electrodes installed with enhancement material backfill. Results show that while EMs significantly reduce resistance, the improvement plateaus beyond a certain moisture threshold, with implications for maintenance scheduling in seasonal environments.</div>
         <div class="pub-meta">
           <span class="pub-venue">Bulletin of Electrical Engineering and Informatics</span>
           <span class="pub-year">2025</span>
@@ -1051,6 +1078,7 @@
       <div class="pub-num">09</div>
       <div class="pub-body">
         <div class="pub-title">Effect of Seasonal Soil Moisture on Grounding System Performance with Enhancement Materials</div>
+        <div class="pub-abstract">Investigates how natural seasonal fluctuations in soil moisture affect the long-term grounding performance of EM-treated electrodes. Using Fluke 1623-2 measurements at multiple sites across dry and wet seasons in Malaysia, the paper models resistance variation over time and proposes moisture-corrected grounding design guidelines.</div>
         <div class="pub-meta">
           <span class="pub-venue">Energies (MDPI)</span>
           <span class="pub-year">2024</span>
@@ -1064,6 +1092,7 @@
       <div class="pub-num">10</div>
       <div class="pub-body">
         <div class="pub-title">Grounding Enhancement Material Performance at Varying Compaction and Moisture Levels</div>
+        <div class="pub-abstract">Studies how the degree of soil compaction around EM backfill interacts with moisture content to influence grounding resistance. Lab cell experiments with controlled compaction levels reveal that poorly compacted EM-soil mixtures lose up to 30% of their resistance-reduction benefit, stressing the importance of installation quality in the field.</div>
         <div class="pub-meta">
           <span class="pub-venue">Bulletin of Electrical Engineering and Informatics</span>
           <span class="pub-year">2024</span>
@@ -1077,6 +1106,7 @@
       <div class="pub-num">11</div>
       <div class="pub-body">
         <div class="pub-title">High-Voltage Impulse Testing of Grounding Rods with SanEarth and GEM Enhancement Materials</div>
+        <div class="pub-abstract">Conducts high-voltage impulse tests (100–300 kV) on rod electrodes treated with SanEarth and GEM, comparing their breakdown voltage (E&#8085;&#8320;) and impulse impedance (Z&#7522;&#7512;&#7660;) against untreated rods. The results show that both materials lower Z&#7522;&#7512;&#7660; but exhibit distinct ionization onset levels, informing material selection for high-voltage protection applications.</div>
         <div class="pub-meta">
           <span class="pub-venue">IEEE Xplore</span>
           <span class="pub-year">2024</span>
@@ -1090,6 +1120,7 @@
       <div class="pub-num">12</div>
       <div class="pub-body">
         <div class="pub-title">Polarity Effect on Impulse Characteristics of Grounding Systems with Enhancement Materials</div>
+        <div class="pub-abstract">Examines how impulse polarity (positive vs. negative) affects the ionization behavior, discharge time (t&#8336;), and impedance of EM-treated grounding electrodes. The study finds that while DC resistance is polarity-independent, the ionization onset and tail-end current behavior differ significantly, with implications for lightning protection design standards.</div>
         <div class="pub-meta">
           <span class="pub-venue">IEEE Xplore</span>
           <span class="pub-year">2024</span>
@@ -1103,6 +1134,7 @@
       <div class="pub-num">13</div>
       <div class="pub-body">
         <div class="pub-title">Resistivity Reduction of Tropical Soils Using Commercial Grounding Enhancement Materials</div>
+        <div class="pub-abstract">Quantifies how GEM, MEG, and SanEarth reduce the bulk electrical resistivity of sandy loam and laterite soils common in Malaysia. Using four-probe Wenner measurements before and after EM application, the study demonstrates resistivity reductions of up to 60%, providing field-validated data for grounding engineers in tropical regions.</div>
         <div class="pub-meta">
           <span class="pub-venue">Bulletin of Electrical Engineering and Informatics</span>
           <span class="pub-year">2024</span>
@@ -1116,6 +1148,7 @@
       <div class="pub-num">14</div>
       <div class="pub-body">
         <div class="pub-title">Field Measurement and Modeling of Earth Resistance for Grounding Systems in Sandy Loam</div>
+        <div class="pub-abstract">Combines Fluke 1623-2 field resistivity measurements with SES-CDEGS multi-layer modeling to predict and validate DC earth resistance of grounding electrodes in sandy loam. The paper bridges the gap between simulated and measured grounding performance, offering a practical workflow for grounding system designers working in heterogeneous soil profiles.</div>
         <div class="pub-meta">
           <span class="pub-venue">Bulletin of Electrical Engineering and Informatics</span>
           <span class="pub-year">2024</span>
@@ -1128,7 +1161,8 @@
     <a class="pub-item" href="https://doi.org/10.3390/app14020547" target="_blank" data-type="mdpi">
       <div class="pub-num">15</div>
       <div class="pub-body">
-        <div class="pub-title">Laboratory Assessment of Grounding Enhancement Materials for Tropical Soil Applications</div>
+        <div class="pub-title">Impulse Characteristics of Soil Treated with Enhancement Materials and Various Moisture Contents</div>
+        <div class="pub-abstract">Presents field impulse tests (up to 100 kV) on a 2×2 m grid electrode installed in natural soil, EM-treated soil, and EM-treated soil with 10–100 L of added water. A notable finding is the inductive overshoot in voltage and current traces for low-resistance EM-treated electrodes — a phenomenon explained via PSPICE simulation showing the inductive effect becomes dominant when DC resistance is reduced.</div>
         <div class="pub-meta">
           <span class="pub-venue">Applied Sciences (MDPI)</span>
           <span class="pub-year">2024</span>
@@ -1142,6 +1176,7 @@
       <div class="pub-num">16</div>
       <div class="pub-body">
         <div class="pub-title">AC Impedance Analysis of Grounding Enhancement Materials at Low Voltage in Sandy Loam Soil</div>
+        <div class="pub-abstract">Characterizes the AC impedance of GEM, MEG, and SanEarth embedded in sandy loam soil using a parallel-plate lab cell at low voltage. The paper maps frequency-dependent impedance profiles for each material, identifying resistive and capacitive components that influence power-frequency grounding performance and form the basis for further high-voltage testing.</div>
         <div class="pub-meta">
           <span class="pub-venue">Advances in Electrical and Electronic Engineering</span>
           <span class="pub-year">2023</span>
@@ -1155,6 +1190,7 @@
       <div class="pub-num">17</div>
       <div class="pub-body">
         <div class="pub-title">Experimental Study of Grounding Rod Performance with MEG Enhancement Material Under Impulse Conditions</div>
+        <div class="pub-abstract">Reports impulse test results for rod electrodes backfilled with MEG (Marconite Electrical Grade) under standard 1.2/50 µs lightning impulse waveforms. The study evaluates how MEG's carbon-graphite composition affects ionization threshold, impulse impedance, and current discharge time compared to unenhanced rods in the same soil environment.</div>
         <div class="pub-meta">
           <span class="pub-venue">IEEE Xplore</span>
           <span class="pub-year">2023</span>
@@ -1168,6 +1204,7 @@
       <div class="pub-num">18</div>
       <div class="pub-body">
         <div class="pub-title">Characterization of Grounding Enhancement Material Mixtures in Controlled Laboratory Conditions</div>
+        <div class="pub-abstract">The earliest publication in this research series, establishing the laboratory methodology for characterizing grounding enhancement materials in controlled soil configurations. A custom-built lab rig with parallel plate electrodes was used to measure resistivity and AC impedance of GEM, MEG, and SanEarth at various mix ratios, laying the groundwork for all subsequent field and impulse studies.</div>
         <div class="pub-meta">
           <span class="pub-venue">IEEE Xplore</span>
           <span class="pub-year">2022</span>
@@ -1177,7 +1214,9 @@
       <div class="pub-arrow">→</div>
     </a>
 
-  </div>
+    </div><!-- end morePubs -->
+
+  </div><!-- end pubList -->
 </section>
 
 <div class="section-divider"><hr></div>
@@ -1344,20 +1383,41 @@
   <p style="margin-top:0.5rem;color:#ffffff33;">Electrical Engineer · Masters Researcher · Grounding Systems Specialist</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-function filterPubs(type, btn) {
-  document.querySelectorAll('.pub-filter').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.pub-item').forEach(item => {
-    if (type === 'all' || item.dataset.type === type) {
-      item.style.display = 'flex';
-    } else {
-      item.style.display = 'none';
-    }
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+function showMorePubs() {
+  var more = document.getElementById('morePubs');
+  var wrapper = document.getElementById('readMoreWrapper');
+  more.style.display = 'flex';
+  wrapper.style.display = 'none';
+  var active = document.querySelector('.pub-filter.active');
+  if (active) {
+    var match = active.getAttribute('onclick').match(/'([^']+)'/);
+    if (match) applyFilter(match[1]);
+  }
+  document.querySelectorAll('#morePubs .pub-item').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.4s ' + (i * 0.05) + 's ease, transform 0.4s ' + (i * 0.05) + 's ease';
+    setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; }, 50);
   });
 }
 
-// Intersection observer for scroll animations
+function applyFilter(type) {
+  var moreVisible = document.getElementById('morePubs').style.display === 'flex';
+  document.querySelectorAll('.pub-item').forEach(item => {
+    var inMore = item.closest('#morePubs');
+    if (inMore && !moreVisible) return;
+    item.style.display = (type === 'all' || item.dataset.type === type) ? 'flex' : 'none';
+  });
+}
+
+function filterPubs(type, btn) {
+  document.querySelectorAll('.pub-filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilter(type);
+}
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -1367,4 +1427,12 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.pub-item, .about-card, .gallery-item, .timeline-item, .contact
+document.querySelectorAll('.pub-item:not(#morePubs .pub-item), .about-card, .gallery-item, .timeline-item, .contact-card').forEach((el, i) => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ' + (i * 0.04) + 's ease, transform 0.5s ' + (i * 0.04) + 's ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
